@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://bk10ayl7kb2np"]
+
+[ext_resource type="AudioStream" uid="uid://6rggl5e8lne" path="res://assets/music/Yo-voy-_Slowed-Reverb_-_-Zion-_-Lennox-_Letra-Edit_-_-Vegito-y-Gogeta-_____-___.ogg" id="1_jxdhu"]
+
+[node name="MusicPlayer" type="AudioStreamPlayer"]
+stream = ExtResource("1_jxdhu")
+autoplay = true
