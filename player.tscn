@@ -40,6 +40,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_i3pqv"]
+resource_name = "RESET"
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -76,7 +77,7 @@ _data = {
 script = ExtResource("1_onrkg")
 
 [node name="Pivot" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6, 0)
 
 [node name="Character" parent="Pivot" instance=ExtResource("2_i3pqv")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0039806366, 0, 0)
