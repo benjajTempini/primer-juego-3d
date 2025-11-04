@@ -1,4 +1,5 @@
 extends CharacterBody3D
+signal hit
 
 # How fast the player moves in meters per second.
 @export var speed = 14
@@ -53,3 +54,10 @@ func _physics_process(delta):
 				break
 	
 	move_and_slide()
+
+func die():
+	hit.emit()
+	queue_free()
+
+func _on_mob_detector_body_entered(body):
+	die()
